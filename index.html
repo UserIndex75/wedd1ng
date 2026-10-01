@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حنين &amp; جوهر — دعوة زفاف</title>
+<meta name="description" content="دعوة زفاف حنين وجوهر">
+<link rel="prefetch" href="main.html">
+<link rel="prefetch" href="assets/audio/song.mp3" as="audio">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/intro.css">
+<script src="js/intro.js" defer></script>
+</head>
+<body>
+
+<!-- ============ SVG DEFS: FLOWER + DOVE + PETAL LIBRARY ============ -->
+<svg width="0" height="0" style="position:absolute">
+<defs>
+
+<svg width="0" height="0" style="position:absolute">
+<defs>
+  <radialGradient id="petalGrad" cx="42%" cy="78%" r="85%">
+    <stop offset="0%" stop-color="#fffdfa"></stop><stop offset="52%" stop-color="#f6dfe3"></stop><stop offset="100%" stop-color="#d9aab3"></stop>
+  </radialGradient>
+  <radialGradient id="petalGrad2" cx="42%" cy="78%" r="85%">
+    <stop offset="0%" stop-color="#fbeee7"></stop><stop offset="55%" stop-color="#ecc9cf"></stop><stop offset="100%" stop-color="#c98a9e"></stop>
+  </radialGradient>
+  <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#bccbaa"></stop><stop offset="100%" stop-color="#748764"></stop>
+  </linearGradient>
+  <linearGradient id="leafGradDark" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#8a9a7e"></stop><stop offset="100%" stop-color="#4f5d43"></stop>
+  </linearGradient>
+
+  <!-- realistic layered petal shapes with a soft outline, for an open peony/garden-rose look -->
+  <g id="petal-outer">
+    <path d="M0,-4 C-15,-9 -23,-27 -13,-44 C-7,-31 -2,-16 0,-4 C2,-16 7,-31 13,-44 C23,-27 15,-9 0,-4 Z" fill="url(#petalGrad)" stroke="#dba9b2" stroke-width="0.5" stroke-opacity="0.55"></path>
+  </g>
+  <g id="petal-inner">
+    <path d="M0,-3 C-9,-6.5 -14,-19 -8,-30 C-4,-21 -1,-11 0,-3 C1,-11 4,-21 8,-30 C14,-19 9,-6.5 0,-3 Z" fill="url(#petalGrad2)" stroke="#c98a9e" stroke-width="0.4" stroke-opacity="0.45"></path>
+  </g>
+
+  <g id="bloom">
+    <g fill="url(#leafGrad)" opacity="0.95">
+      <ellipse cx="-21" cy="-6" rx="7" ry="18" transform="rotate(-38 -21 -6)"></ellipse>
+      <ellipse cx="21" cy="-6" rx="7" ry="18" transform="rotate(38 21 -6)"></ellipse>
+      <ellipse cx="-15" cy="15" rx="6" ry="15" transform="rotate(-60 -15 15)"></ellipse>
+      <ellipse cx="15" cy="15" rx="6" ry="15" transform="rotate(60 15 15)"></ellipse>
+    </g>
+    <g>
+      <use href="#petal-outer" transform="rotate(0)"></use><use href="#petal-outer" transform="rotate(45)"></use>
+      <use href="#petal-outer" transform="rotate(90)"></use><use href="#petal-outer" transform="rotate(135)"></use>
+      <use href="#petal-outer" transform="rotate(180)"></use><use href="#petal-outer" transform="rotate(225)"></use>
+      <use href="#petal-outer" transform="rotate(270)"></use><use href="#petal-outer" transform="rotate(315)"></use>
+    </g>
+    <g transform="scale(.68) rotate(22)">
+      <use href="#petal-inner" transform="rotate(0)"></use><use href="#petal-inner" transform="rotate(60)"></use>
+      <use href="#petal-inner" transform="rotate(120)"></use><use href="#petal-inner" transform="rotate(180)"></use>
+      <use href="#petal-inner" transform="rotate(240)"></use><use href="#petal-inner" transform="rotate(300)"></use>
+    </g>
+    <g fill="#c9a227">
+      <circle cx="0" cy="0" r="4"></circle>
+      <circle cx="3.2" cy="-2" r="1" fill="#8a6a2a"></circle><circle cx="-3.2" cy="-2" r="1" fill="#8a6a2a"></circle>
+      <circle cx="0" cy="3.4" r="1" fill="#8a6a2a"></circle>
+    </g>
+  </g>
+
+  <g id="bloomSmall">
+    <g fill="url(#leafGrad)" opacity="0.9">
+      <ellipse cx="-13" cy="-4" rx="5" ry="12" transform="rotate(-38 -13 -4)"></ellipse>
+      <ellipse cx="13" cy="-4" rx="5" ry="12" transform="rotate(38 13 -4)"></ellipse>
+    </g>
+    <g transform="scale(.6)">
+      <use href="#petal-outer" transform="rotate(0)"></use><use href="#petal-outer" transform="rotate(60)"></use>
+      <use href="#petal-outer" transform="rotate(120)"></use><use href="#petal-outer" transform="rotate(180)"></use>
+      <use href="#petal-outer" transform="rotate(240)"></use><use href="#petal-outer" transform="rotate(300)"></use>
+    </g>
+    <circle cx="0" cy="0" r="2.4" fill="#c9a227"></circle>
+  </g>
+
+  <g id="bud">
+    <path d="M0,14 C-9,6 -9,-10 0,-18 C9,-10 9,6 0,14 Z" fill="url(#petalGrad)" stroke="#dba9b2" stroke-width="0.4" stroke-opacity="0.5"></path>
+    <path d="M0,14 C-14,10 -18,-2 -6,-6" stroke="#748764" stroke-width="1.8" fill="none"></path>
+  </g>
+
+  <!-- slender eucalyptus-style stem -->
+  <g id="sprig">
+    <path d="M0,0 C-8,-16 -6,-36 6,-52" stroke="#6f8161" stroke-width="1.8" fill="none"></path>
+    <ellipse cx="-6" cy="-10" rx="5" ry="11" fill="url(#leafGrad)" transform="rotate(-30 -6 -10)"></ellipse>
+    <ellipse cx="7" cy="-23" rx="5" ry="11" fill="url(#leafGrad)" transform="rotate(28 7 -23)"></ellipse>
+    <ellipse cx="-4" cy="-37" rx="4.5" ry="10" fill="url(#leafGrad)" transform="rotate(-24 -4 -37)"></ellipse>
+    <ellipse cx="4" cy="-49" rx="4" ry="9" fill="url(#leafGrad)" transform="rotate(20 4 -49)"></ellipse>
+  </g>
+
+  <g id="branch">
+    <path d="M0,0 C-8,-26 6,-56 -6,-92" stroke="#5f7256" stroke-width="1.8" fill="none"></path>
+    <ellipse cx="-9" cy="-14" rx="6" ry="13" fill="url(#leafGradDark)" transform="rotate(-34 -9 -14)"></ellipse>
+    <ellipse cx="9" cy="-31" rx="6" ry="13" fill="url(#leafGradDark)" transform="rotate(30 9 -31)"></ellipse>
+    <ellipse cx="-7" cy="-51" rx="5.5" ry="12" fill="url(#leafGradDark)" transform="rotate(-28 -7 -51)"></ellipse>
+    <ellipse cx="4" cy="-71" rx="5" ry="11" fill="url(#leafGradDark)" transform="rotate(24 4 -71)"></ellipse>
+  </g>
+
+  <!-- layered floral corner composition: foreground bold bloom + midground buds/leaf + faint background silhouette -->
+  <g id="flowerSpray">
+    <use href="#sprig" transform="translate(18,92) scale(1.35)"></use>
+    <use href="#branch" transform="translate(70,96) scale(.9) rotate(8)"></use>
+    <use href="#bloom" transform="translate(28,32) scale(1.2) rotate(-10)"></use>
+    <use href="#bloom" transform="translate(64,54) scale(.86) rotate(18)"></use>
+    <use href="#bloomSmall" transform="translate(12,56) scale(1) rotate(-28)"></use>
+    <use href="#bloomSmall" transform="translate(80,32) scale(.9) rotate(30)"></use>
+    <use href="#bud" transform="translate(56,16) scale(.9) rotate(32)"></use>
+    <use href="#bud" transform="translate(86,78) scale(.8) rotate(-14)"></use>
+    <use href="#bud" transform="translate(4,30) scale(.7) rotate(14)"></use>
+  </g>
+
+  <!-- a lighter secondary spray for opposing corners / smaller usages -->
+  <g id="flowerSpraySmall">
+    <use href="#sprig" transform="translate(14,70) scale(1)"></use>
+    <use href="#bloomSmall" transform="translate(24,26) scale(1) rotate(-14)"></use>
+    <use href="#bloomSmall" transform="translate(48,40) scale(.72) rotate(20)"></use>
+    <use href="#bud" transform="translate(40,12) scale(.8) rotate(20)"></use>
+  </g>
+
+  <!-- faint background silhouette botanical, single color -->
+  <g id="botanicalSilhouette" fill="#5f7256">
+    <path d="M0,120 C-4,80 10,50 4,0 C30,20 34,60 14,100 C40,86 60,90 68,60 C58,100 34,116 0,120 Z"></path>
+  </g>
+
+  <g id="doveShape">
+    <path d="M0,10 C10,4 22,4 30,-4 C24,-2 18,-4 14,-8 C22,-10 28,-16 30,-24 C22,-18 12,-16 6,-10 C2,-16 -6,-20 -16,-20 C-8,-14 -4,-8 -4,-2 C-10,0 -18,-2 -24,-8 C-20,0 -10,8 0,10 Z" fill="#ffffff" stroke="#e7ddc8" stroke-width="0.6"></path>
+  </g>
+
+  <g id="petalShape">
+    <path d="M0,-10 C7,-8 9,0 4,9 C1,11 -1,11 -4,9 C-9,0 -7,-8 0,-10 Z" fill="url(#petalGrad2)" stroke="#c98a9e" stroke-width="0.3" stroke-opacity="0.4"></path>
+  </g>
+
+
+  <!-- Reference-inspired five-petal garden blossom: softer, less geometric, with visible veins/stamens. -->
+  <g id="refPetal">
+    <path d="M0,-2 C-15,-10 -18,-25 -9,-35 C-2,-43 7,-38 9,-28 C11,-18 6,-8 0,-2 Z" fill="url(#petalGrad)" stroke="#c9909c" stroke-width=".65" stroke-opacity=".45"></path>
+    <path d="M0,-5 C-2,-15 -5,-25 -5,-31" fill="none" stroke="#b97989" stroke-width=".55" stroke-opacity=".35"></path>
+    <path d="M-1,-7 C-5,-16 -8,-21 -12,-25" fill="none" stroke="#b97989" stroke-width=".45" stroke-opacity=".25"></path>
+  </g>
+
+  <g id="refFlower">
+    <g transform="scale(.95)">
+      <use href="#refPetal" transform="rotate(0)"></use>
+      <use href="#refPetal" transform="rotate(72)"></use>
+      <use href="#refPetal" transform="rotate(144)"></use>
+      <use href="#refPetal" transform="rotate(216)"></use>
+      <use href="#refPetal" transform="rotate(288)"></use>
+    </g>
+    <g fill="#c5a044">
+      <circle cx="0" cy="0" r="4.2"></circle>
+      <circle cx="-3.5" cy="-1.8" r="1.1" fill="#8b6a31"></circle>
+      <circle cx="3.2" cy="-2" r="1.1" fill="#8b6a31"></circle>
+      <circle cx="0" cy="3.1" r="1.05" fill="#8b6a31"></circle>
+    </g>
+    <g stroke="#b98c46" stroke-width=".7" stroke-linecap="round" opacity=".7">
+      <path d="M0,-1 L-7,-10"></path><path d="M2,-1 L8,-9"></path><path d="M0,2 L-5,10"></path><path d="M2,2 L7,8"></path>
+    </g>
+  </g>
+
+  <g id="refLeaf">
+    <path d="M0,0 C-10,-7 -16,-19 -12,-29 C-2,-27 5,-19 6,-9 C6,-4 3,-1 0,0 Z" fill="url(#leafGrad)" opacity=".92"></path>
+    <path d="M0,-1 C-4,-10 -7,-17 -10,-25" fill="none" stroke="#5f7256" stroke-width=".75" opacity=".55"></path>
+  </g>
+
+  <g id="refBranch">
+    <path d="M0,118 C8,93 2,74 18,55 C31,39 40,21 42,0" fill="none" stroke="#6c7f60" stroke-width="2" stroke-linecap="round"></path>
+    <path d="M7,92 C-1,77 -12,67 -20,61" fill="none" stroke="#80906f" stroke-width="1.5" stroke-linecap="round"></path>
+    <path d="M17,63 C29,54 38,44 47,33" fill="none" stroke="#80906f" stroke-width="1.5" stroke-linecap="round"></path>
+    <use href="#refLeaf" transform="translate(10,94) rotate(-55) scale(.8)"></use>
+    <use href="#refLeaf" transform="translate(2,79) rotate(-108) scale(.72)"></use>
+    <use href="#refLeaf" transform="translate(20,66) rotate(28) scale(.82)"></use>
+    <use href="#refLeaf" transform="translate(34,48) rotate(-38) scale(.62)"></use>
+    <use href="#refLeaf" transform="translate(43,31) rotate(38) scale(.58)"></use>
+    <use href="#refFlower" transform="translate(-10,57) scale(.58) rotate(-10)"></use>
+    <use href="#refFlower" transform="translate(19,31) scale(.46) rotate(18)"></use>
+    <use href="#refFlower" transform="translate(43,4) scale(.40) rotate(-8)"></use>
+    <use href="#refFlower" transform="translate(46,42) scale(.30) rotate(28)"></use>
+  </g>
+
+  <g id="refSpray">
+    <use href="#refBranch" transform="translate(18,8) scale(1.05)"></use>
+    <use href="#refBranch" transform="translate(70,4) scale(.76) rotate(18 70 4)"></use>
+    <use href="#refFlower" transform="translate(21,31) scale(.82) rotate(-12)"></use>
+    <use href="#refFlower" transform="translate(68,54) scale(.66) rotate(16)"></use>
+    <use href="#refFlower" transform="translate(42,17) scale(.34) rotate(-6)"></use>
+  </g>
+
+  <!-- small flourish flanking the ampersand, echoing the reference card layout -->
+  <g id="flourish">
+    <path d="M0,0 C14,-2 26,2 36,0" stroke="#b8923f" stroke-width="1" fill="none" stroke-linecap="round"></path>
+    <circle cx="40" cy="0" r="1.6" fill="#b8923f"></circle>
+  </g>
+
+  <!-- small bud badge icon used at the top of the invitation card -->
+  <g id="badgeBud">
+    <path d="M0,10 C-7,4 -7,-7 0,-13 C7,-7 7,4 0,10 Z" fill="#fff"></path>
+    <path d="M0,10 C-9,7 -12,-2 -4,-4" stroke="#fff" stroke-width="1.3" fill="none" opacity=".8"></path>
+  </g>
+</defs>
+</svg>
+
+
+</defs>
+</svg>
+
+<!-- fixed background botanical depth layer -->
+
+<div class="botanical-bg" aria-hidden="true">
+  <svg style="left:-4%;top:8%;width:160px" viewBox="0 0 100 130"><use href="#botanicalSilhouette"></use></svg>
+  <svg style="right:-6%;top:38%;width:200px;transform:scaleX(-1)" viewBox="0 0 100 130"><use href="#botanicalSilhouette"></use></svg>
+  <svg style="left:2%;bottom:6%;width:170px" viewBox="0 0 100 130"><use href="#botanicalSilhouette"></use></svg>
+  <svg style="right:0;bottom:30%;width:150px;transform:scaleX(-1)" viewBox="0 0 100 130"><use href="#botanicalSilhouette"></use></svg>
+</div>
+
+
+<!-- continuous falling petals -->
+
+<div id="petalField" aria-hidden="true"></div>
+
+
+<!-- ============ INTRO / ENVELOPE ============ -->
+
+<div id="intro">
+  <div class="intro-particles" id="particles"></div>
+
+  <!-- Asymmetric botanical framing inspired by the reference invitation. -->
+  <svg class="intro-flora left-hero" viewBox="0 0 120 140" aria-hidden="true"><use href="#refSpray"></use></svg>
+  <svg class="intro-flora right-hero" viewBox="0 0 120 140" aria-hidden="true"><use href="#refSpray"></use></svg>
+  <svg class="intro-flora left-lower" viewBox="0 0 120 140" aria-hidden="true"><use href="#refSpray"></use></svg>
+  <svg class="intro-flora right-lower" viewBox="0 0 120 140" aria-hidden="true"><use href="#refSpray"></use></svg>
+  <svg class="intro-flora mini left" viewBox="0 0 120 140" aria-hidden="true"><use href="#flowerSpraySmall"></use></svg>
+  <svg class="intro-flora mini right" viewBox="0 0 120 140" aria-hidden="true"><use href="#flowerSpraySmall"></use></svg>
+
+  <div class="envelope-wrap" id="envelopeWrap">
+    <div class="intro-eyebrow">بسم الله الرحمن الرحيم</div>
+    <div class="envelope-stage" id="envelope">
+      <div class="env-glow"></div>
+      <div class="dove-field" id="doveField"></div>
+      <div class="env-shadow"></div>
+
+      <div class="env-outer">
+        <svg class="env-corner-motif c1" viewBox="0 0 100 100"><use href="#flowerSpraySmall"></use></svg>
+        <svg class="env-corner-motif c2" viewBox="0 0 100 100"><use href="#flowerSpraySmall"></use></svg>
+        <svg class="env-corner-motif c3" viewBox="0 0 100 100"><use href="#flowerSpraySmall"></use></svg>
+        <svg class="env-corner-motif c4" viewBox="0 0 100 100"><use href="#flowerSpraySmall"></use></svg>
+
+        <div class="env-inner"></div>
+
+        <div class="env-card">
+          <div class="env-card-frame"></div>
+          
+        </div>
+      </div>
+
+      <!-- kept as a sibling of .env-outer (not a clipped child) so its 3D swing
+           is never cut off by the envelope body's rounded-corner overflow:hidden -->
+      <div class="env-flap" id="envFlap">
+        <div class="env-flap-edge"></div>
+        
+      </div>
+
+      <div class="env-seal" id="envSeal" aria-hidden="true">
+        <img src="assets/images/logo-seal.png" alt="">
+      </div>
+    </div>
+    <button class="open-btn" id="openBtn" type="button">
+      <span id="openBtnLabel">فتح الدعوة</span><span class="loading-dot" id="loadingDot" style="display: none;"></span>
+    </button>
+  </div>
+</div>
+<div id="pageCurtain" aria-hidden="true"></div>
+
+
+</body></html>
